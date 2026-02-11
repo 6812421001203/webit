@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Student Pack - WindowsPond</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-main: #0d1117; --bg-card: #161b22; --border: #30363d; --text: #c9d1d9; --accent: #58a6ff; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg-main); color: var(--text); margin: 0; padding: 0; line-height: 1.6; }
+        
+        /* Navbar */
+        .navbar { background: rgba(22, 27, 34, 0.9); padding: 15px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px); }
+        .nav-logo { font-weight: 800; color: #fff; text-decoration: none; display: flex; align-items: center; gap: 8px; font-size: 1.1rem; }
+        .nav-links a { color: var(--text); text-decoration: none; margin-left: 20px; font-size: 0.95rem; transition: 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero Section */
+        .hero { text-align: center; padding: 60px 20px 40px; background: radial-gradient(circle at top, rgba(88, 166, 255, 0.15), transparent 70%); }
+        h1 { font-size: 2.5rem; color: #fff; margin: 0 0 10px 0; font-weight: 800; }
+        .subtitle { color: #8b949e; max-width: 600px; margin: 0 auto; }
+        
+        .container { max-width: 800px; margin: 0 auto; padding: 20px 20px 60px; }
+
+        /* เมนูหลักแบบลิ้งค์ (แก้ไขใหม่) */
+        .menu-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .menu-link:hover {
+            border-color: var(--accent);
+            transform: translateX(5px); /* ขยับขวานิดนึงตอนชี้ */
+            background-color: #1f2428;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .menu-link .arrow { color: #8b949e; font-size: 1.2rem; transition: 0.2s; }
+        .menu-link:hover .arrow { color: var(--accent); transform: translateX(3px); }
+
+        /* ปุ่มด้านล่าง (Grid) */
+        .grid-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 40px; }
+        .btn-card { 
+            background: var(--bg-card); 
+            border: 1px solid var(--border); 
+            padding: 25px; 
+            text-align: center; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            color: #fff; 
+            transition: 0.3s;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        .btn-card:hover { border-color: var(--accent); transform: translateY(-3px); background-color: #1f2428; }
+        .btn-icon { font-size: 2rem; margin-bottom: 10px; }
+        .btn-text { font-weight: 700; font-size: 1rem; }
+        .btn-sub { font-size: 0.85rem; color: #8b949e; margin-top: 5px; }
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-logo">🎓 Student Pack</a>
+    <div class="nav-links">
+        <a href="index.html" style="color: var(--accent);">หน้าหลัก</a>
+        <a href="apply.html">วิธีสมัคร</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Student Benefits 2026 🎁</h1>
+    <p class="subtitle">คลิกที่หัวข้อเพื่อดูรายละเอียดสิทธิ์พิเศษแต่ละด้าน</p>
+</div>
+
+<div class="container">
+    <a href="page1.html" class="menu-link">
+        <span>🤖 1. AI & Coding Tools</span>
+        <span class="arrow">➔</span>
+    </a>
+
+    <a href="page2.html" class="menu-link">
+        <span>☁️ 2. Cloud & Servers</span>
+        <span class="arrow">➔</span>
+    </a>
+
+    <a href="page3.html" class="menu-link">
+        <span>🌐 3. Domains (.me ฟรี)</span>
+        <span class="arrow">➔</span>
+    </a>
+
+    <a href="page4.html" class="menu-link">
+        <span>📚 4. Education (คอร์สเรียน)</span>
+        <span class="arrow">➔</span>
+    </a>
+
+    <a href="page5.html" class="menu-link">
+        <span>🎨 5. Design (Canva Pro)</span>
+        <span class="arrow">➔</span>
+    </a>
+
+    <a href="page6.html" class="menu-link">
+        <span>🛠️ 6. Utilities (เครื่องมือ)</span>
+        <span class="arrow">➔</span>
+    </a>
+
+    <div class="grid-btns">
+        <a href="apply.html" class="btn-card">
+            <span class="btn-icon">📝</span>
+            <span class="btn-text">วิธีสมัครทีละสเต็ป</span>
+            <span class="btn-sub">สอนเตรียมเอกสารให้ผ่าน</span>
+        </a>
+        <a href="ideas.html" class="btn-card">
+            <span class="btn-icon">💡</span>
+            <span class="btn-text">ไอเดียโปรเจกต์</span>
+            <span class="btn-sub">เอาของฟรีไปทำอะไรดี?</span>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
