@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิธีสมัคร - How to Apply</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-main: #0d1117; --bg-card: #161b22; --border: #30363d; --text: #c9d1d9; --accent: #3fb950; } /* สีเขียว */
+        body { font-family: 'Inter', sans-serif; background: var(--bg-main); color: var(--text); margin: 0; padding: 0; }
+        
+        .navbar { background: rgba(22, 27, 34, 0.9); padding: 15px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px); }
+        .nav-logo { font-weight: 800; color: #fff; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .nav-links a { color: var(--text); text-decoration: none; margin-left: 20px; transition: 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+        .container { max-width: 700px; margin: 40px auto; padding: 20px; }
+        h1 { text-align: center; color: #fff; }
+
+        /* Timeline */
+        .step { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; position: relative; border-left: 5px solid var(--accent); }
+        .step h3 { margin-top: 0; color: #fff; }
+        .step-num { position: absolute; top: -15px; left: -15px; background: var(--accent); color: #000; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+        
+        .cta-btn { display: block; width: 100%; padding: 15px; background: var(--accent); color: #fff; text-align: center; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 30px; }
+        .cta-btn:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-logo">🎓 Student Pack</a>
+    <div class="nav-links">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="apply.html" class="active">วิธีสมัคร</a>
+        <a href="ideas.html">ไอเดีย</a>
+    </div>
+</nav>
+
+<div class="container">
+    <h1>📝 ขั้นตอนการสมัคร (Step-by-Step)</h1>
+    
+    <div class="step">
+        <div class="step-num">1</div>
+        <h3>เตรียมเอกสาร</h3>
+        <p>ใช้มือถือถ่ายรูป <b>บัตรนักเรียน</b> หรือ <b>ใบรับรอง (ปพ.7)</b> วางบนโต๊ะ แสงชัดเจน ห้ามใช้ไฟล์สแกน</p>
+    </div>
+
+    <div class="step">
+        <div class="step-num">2</div>
+        <h3>ตั้งค่า GitHub</h3>
+        <p>แก้ชื่อ-นามสกุลใน Profile ให้ตรงกับบัตร (ภาษาอังกฤษ) และเปิดระบบ 2FA (Two-factor authentication) ก่อน</p>
+    </div>
+
+    <div class="step">
+        <div class="step-num">3</div>
+        <h3>ยื่นคำร้อง</h3>
+        <p>ไปที่หน้า GitHub Education เลือก <b>"I don't have a school email"</b> แล้วอัปโหลดรูปถ่าย พร้อมตอบคำถาม</p>
+    </div>
+
+    <div class="step">
+        <div class="step-num">4</div>
+        <h3>รอผล</h3>
+        <p>ใช้เวลา 1-3 วัน ถ้าผ่านจะได้รับอีเมลยืนยัน และสถานะในเว็บจะเปลี่ยนเป็นสีเขียว</p>
+    </div>
+
+    <a href="https://education.github.com/pack" target="_blank" class="cta-btn">🚀 ไปที่หน้าสมัครของ GitHub</a>
+</div>
+
+</body>
+</html>
