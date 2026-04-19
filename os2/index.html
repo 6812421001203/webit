@@ -10,89 +10,252 @@
 
     <nav>
         <ul>
-            <li><a href="index.html" style="color:var(--accent);">หน้าแรก</a></li>
-            <li><a href="museum.html">OS Museum</a></li>
-            <li><a href="news.html">ข่าวไอที</a></li>
-            <li><a href="hardware.html">Maintenance</a></li>
-            <li><a href="download.html">ดาวน์โหลด</a></li>
+            <li><a href="#hero" style="color:var(--accent);">หน้าร้าน</a></li>
+            <li><a href="#featured">เกมแนะนำ</a></li>
+            <li><a href="#deals">ดีลแรง</a></li>
+            <li><a href="#preorder">พรีออเดอร์</a></li>
+            <li><a href="#services">บริการ</a></li>
         </ul>
     </nav>
 
     <div class="ticker">
         <div class="ticker-wrap">
-            <span class="ticker-item">💡 Tip: ใช้เมลนักศึกษาสมัคร Notion เพื่อรับพื้นที่อัปโหลดไม่จำกัด</span>
-            <span class="ticker-item">🏛️ ใหม่! ลองรัน Windows 98 และ Mac OS 8 บนเบราว์เซอร์ได้ที่หน้า Museum</span>
-            <span class="ticker-item">🤖 แนะนำ AI Tools สำหรับช่วยสรุปบทเรียนและหาข้อมูลวิจัย</span>
-            <span class="ticker-item">📂 แนะนำ: วิธีจัดระเบียบไฟล์ในคอมพิวเตอร์ให้ทำงานได้ไวขึ้น</span>
+            <span class="ticker-item">🔥 Flash Sale: บัตรเติมเงิน Steam ลดเพิ่ม 10% ด้วยโค้ด POND10</span>
+            <span class="ticker-item">🕹️ พรีออเดอร์ Stellar Odyssey รับสกินยานพาหนะพิเศษวันเปิดตัว</span>
+            <span class="ticker-item">🚀 ส่งคีย์ดิจิทัลทันที รองรับ Steam / PlayStation / Xbox</span>
+            <span class="ticker-item">🎮 ซื้อเกม PC ครบ 1,000฿ รับ Wallet โบนัส 100฿</span>
         </div>
     </div>
 
-    <header class="hero">
-        <div>
-            <h1 class="neon-title">WINDOWS POND</h1>
-            <p>IT & Software Knowledge for Students</p>
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Digital Game Store</p>
+            <h1 class="neon-title">POND GAME STORE</h1>
+            <p class="hero-sub">ซื้อเกม PC / Console คีย์แท้ ส่งโค้ดทันที รองรับทุกแพลตฟอร์ม พร้อมโปรลดราคาทุกสัปดาห์</p>
+            <div class="cta-group">
+                <a href="#featured" class="btn">เลือกเกมยอดนิยม</a>
+                <a href="#deals" class="btn ghost">ดูดีลลดราคา</a>
+            </div>
+            <div class="pill-row">
+                <span class="pill">คีย์แท้มีใบเสร็จ</span>
+                <span class="pill">ส่งโค้ดอัตโนมัติภายใน 30 วิ</span>
+                <span class="pill">รองรับ Steam · PlayStation · Xbox</span>
+            </div>
         </div>
     </header>
 
     <div class="container">
         
-        <section>
-            <h2 style="color: var(--accent); border-left: 5px solid var(--accent); padding-left: 15px;">🎓 สิทธิพิเศษสำหรับเมลนักศึกษา</h2>
+        <section id="featured">
+            <div class="section-heading">
+                <p class="eyebrow">ฮิตประจำสัปดาห์</p>
+                <h2>เกมแนะนำ พร้อมส่งโค้ดทันที</h2>
+                <p class="subhead">คัดดีลพิเศษสำหรับเกมเมอร์สาย PC และ Console จากร้าน POND</p>
+            </div>
             <div class="card-grid">
-                
-                <a href="https://www.canva.com/education/" target="_blank" class="card">
-                    <span class="badge">PRO LICENSE</span>
-                    <h3>Canva for Education</h3>
-                    <p>ปลดล็อกฟีเจอร์ออกแบบระดับโปรฟรี (ตรวจสอบสิทธิ์ผ่านเมล .ac.th หรือ GitHub Pack)</p>
-                </a>
+                <div class="card game-card">
+                    <div class="card-top">
+                        <span class="badge sale">-55%</span>
+                        <span class="tag steam">Steam</span>
+                    </div>
+                    <h3>Elden Ring: Shadow of the Erdtree</h3>
+                    <p>ภาคเสริมโลกกว้างที่ทุกคนรอคอย ปลดล็อกบอสและอาวุธใหม่แบบจัดเต็ม</p>
+                    <div class="price-row">
+                        <span class="old-price">1,590฿</span>
+                        <span class="new-price">715฿</span>
+                    </div>
+                    <div class="pill-row">
+                        <span class="pill small">ส่งโค้ดทันที</span>
+                        <span class="pill outline">ภาษาไทยในเกม</span>
+                    </div>
+                </div>
 
-                <a href="https://www.ilovepdf.com/education" target="_blank" class="card">
-                    <span class="badge">EDUCATION PLAN</span>
-                    <h3>iLovePDF Education</h3>
-                    <p>จัดการ PDF แบบไม่จำกัดโควตา (ต้องลงทะเบียนผ่านหน้า Education แยกต่างหาก)</p>
-                </a>
+                <div class="card game-card">
+                    <div class="card-top">
+                        <span class="badge new">Top Chart</span>
+                        <span class="tag ps">PS5</span>
+                    </div>
+                    <h3>FINAL FANTASY VII REBIRTH</h3>
+                    <p>ออกสำรวจโลกกว้างกับคลาวด์และผองเพื่อนบนสเปคกราฟิกระดับ Next-Gen</p>
+                    <div class="price-row">
+                        <span class="new-price">2,190฿</span>
+                    </div>
+                    <div class="pill-row">
+                        <span class="pill small">ของแถม Digital Artbook</span>
+                        <span class="pill outline">โบนัส Materia</span>
+                    </div>
+                </div>
 
-                <a href="https://www.notion.so/product/notion-for-education" target="_blank" class="card">
-                    <span class="badge">FREE UPGRADE</span>
-                    <h3>Notion Plus</h3>
-                    <p>อัปเกรดเป็น Plus Plan อัตโนมัติ เพียงใช้เมลนักศึกษาและยืนยันสถานะ Student</p>
-                </a>
+                <div class="card game-card">
+                    <div class="card-top">
+                        <span class="badge sale">-30%</span>
+                        <span class="tag steam">Steam</span>
+                    </div>
+                    <h3>Palworld</h3>
+                    <p>สร้างฐาน จับเพื่อนคู่หู และผจญภัยในโลกโอเพ่นเวิลด์ที่เล่นกับเพื่อนได้</p>
+                    <div class="price-row">
+                        <span class="old-price">699฿</span>
+                        <span class="new-price">489฿</span>
+                    </div>
+                    <div class="pill-row">
+                        <span class="pill small">รองรับ Co-op</span>
+                        <span class="pill outline">เวอร์ชัน Early Access</span>
+                    </div>
+                </div>
 
+                <div class="card game-card">
+                    <div class="card-top">
+                        <span class="badge new">Popular</span>
+                        <span class="tag xbox">Xbox</span>
+                    </div>
+                    <h3>Forza Horizon 5: Premium Edition</h3>
+                    <p>ขับรถในแผนที่เม็กซิโกสวยสมจริง พร้อม DLC ชุดรถสุดเอ็กซ์คลูซีฟ</p>
+                    <div class="price-row">
+                        <span class="old-price">2,490฿</span>
+                        <span class="new-price">1,890฿</span>
+                    </div>
+                    <div class="pill-row">
+                        <span class="pill small">Play Anywhere</span>
+                        <span class="pill outline">โบนัส Car Pass</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section style="margin-top: 60px;">
-            <h2 style="color: var(--secondary); border-left: 5px solid var(--secondary); padding-left: 15px;">🤖 AI Assistants ช่วยเรียน</h2>
-            <div class="card-grid">
-                <a href="https://www.perplexity.ai/" target="_blank" class="card">
-                    <h3>Perplexity AI</h3>
-                    <p>ค้นหาข้อมูลพร้อมอ้างอิงแหล่งที่มาที่แม่นยำ เหมาะสำหรับการทำรายงานวิชาการ</p>
-                </a>
-                <a href="https://gemini.google.com/" target="_blank" class="card">
-                    <h3>Gemini AI</h3>
-                    <p>ผู้ช่วยอัจฉริยะจาก Google สำหรับสรุปบทเรียนและร่างโครงงานไอที</p>
-                </a>
+        <section id="deals" class="section-spaced">
+            <div class="section-heading">
+                <p class="eyebrow">ดีลจัดหนัก</p>
+                <h2>Bundle + Wallet Bonus</h2>
+                <p class="subhead">เติมเงิน ปลดล็อกโบนัส และรับคูปองส่วนลดสำหรับสัปดาห์นี้</p>
+            </div>
+
+            <div class="deal-grid">
+                <div class="deal-banner card">
+                    <h3>Flash Bundle สำหรับสาย PC</h3>
+                    <ul class="feature-list">
+                        <li>🎯 ซื้อครบ 1,000฿ ลดเพิ่ม 10% ด้วยโค้ด <strong>POND10</strong></li>
+                        <li>💳 รองรับบัตรเครดิต โอนผ่านธนาคาร และ TrueMoney Wallet</li>
+                        <li>🛡️ มีใบเสร็จรับรอง คีย์แท้สามารถรีดีมบน Steam/EA/Xbox</li>
+                    </ul>
+                    <div class="pill-row">
+                        <span class="pill small">คืนเงินได้ภายใน 24 ชม. ถ้ารีดีมไม่ได้</span>
+                    </div>
+                </div>
+
+                <div class="card mini-card">
+                    <h4>Top-Up Wallet</h4>
+                    <p>เติม Steam Wallet 200 / 500 / 1,000 / 2,000฿ ส่งโค้ดทันที</p>
+                    <div class="price-row">
+                        <span class="new-price">เริ่มต้น 195฿</span>
+                    </div>
+                    <span class="tag steam">Steam</span>
+                </div>
+
+                <div class="card mini-card">
+                    <h4>PlayStation Plus</h4>
+                    <p>แพ็ก Essential / Extra / Deluxe ต่ออายุอัตโนมัติพร้อมส่วนลด</p>
+                    <div class="price-row">
+                        <span class="old-price">280฿</span>
+                        <span class="new-price">250฿ / เดือน</span>
+                    </div>
+                    <span class="tag ps">PS5/PS4</span>
+                </div>
+
+                <div class="card mini-card">
+                    <h4>Xbox Game Pass Ultimate</h4>
+                    <p>เข้าถึงเกมกว่า 400 รายการและคลาวด์สตรีมมิ่ง</p>
+                    <div class="price-row">
+                        <span class="new-price">419฿ / เดือน</span>
+                    </div>
+                    <span class="tag xbox">Xbox & PC</span>
+                </div>
             </div>
         </section>
 
-        <section style="margin-top: 60px;">
-            <h2 style="color: #00ff88; border-left: 5px solid #00ff88; padding-left: 15px;">🌐 คลังเว็บมีประโยชน์</h2>
+        <section id="preorder" class="section-spaced">
+            <div class="section-heading">
+                <p class="eyebrow">จองล่วงหน้า</p>
+                <h2>Pre-order รับของแถมวันวางจำหน่าย</h2>
+                <p class="subhead">ล็อกสิทธิ์เกมดังที่กำลังจะมา พร้อมโบนัสดิจิทัลเฉพาะร้าน</p>
+            </div>
             <div class="card-grid">
-                <a href="https://tinypng.com/" target="_blank" class="card">
-                    <h3>TinyPNG</h3>
-                    <p>บีบอัดรูปภาพให้เล็กลงแต่ยังชัดแจ๋ว ช่วยให้ประหยัดพื้นที่และเว็บโหลดไวขึ้น</p>
-                </a>
-                <a href="https://www.remove.bg/" target="_blank" class="card">
-                    <h3>Remove.bg</h3>
-                    <p>ลบพื้นหลังรูปภาพอัตโนมัติด้วย AI ในคลิกเดียว สะดวกในการทำพอร์ต</p>
-                </a>
+                <div class="card game-card">
+                    <div class="card-top">
+                        <span class="badge preorder">Pre-order</span>
+                        <span class="tag ps">PS5</span>
+                    </div>
+                    <h3>Stellar Odyssey</h3>
+                    <p>สำรวจจักรวาลแบบโคออป 3 คน รับสกินยานพาหนะ Aurora</p>
+                    <div class="price-row">
+                        <span class="new-price">1,690฿</span>
+                    </div>
+                    <div class="pill-row">
+                        <span class="pill small">ส่งคีย์วันเปิดตัว</span>
+                        <span class="pill outline">โบนัส Early Access 48 ชม.</span>
+                    </div>
+                </div>
+
+                <div class="card game-card">
+                    <div class="card-top">
+                        <span class="badge preorder">Pre-order</span>
+                        <span class="tag steam">Steam</span>
+                    </div>
+                    <h3>City Skyline II: Architect Pack</h3>
+                    <p>ภาคเสริมปรับปรุงซิมเมือง เพิ่มระบบขนส่งและผังเมืองขั้นสูง</p>
+                    <div class="price-row">
+                        <span class="old-price">990฿</span>
+                        <span class="new-price">890฿</span>
+                    </div>
+                    <div class="pill-row">
+                        <span class="pill small">โบนัส Blueprint Pack</span>
+                        <span class="pill outline">รองรับ MOD เต็มรูปแบบ</span>
+                    </div>
+                </div>
+
+                <div class="card game-card">
+                    <div class="card-top">
+                        <span class="badge preorder">Pre-order</span>
+                        <span class="tag xbox">Xbox</span>
+                    </div>
+                    <h3>GRID Legends: Neon Circuit</h3>
+                    <p>สนามแข่งใหม่พร้อมโหมด Career ขยาย แถมชุดแต่งรถ Neon</p>
+                    <div class="price-row">
+                        <span class="new-price">1,250฿</span>
+                    </div>
+                    <div class="pill-row">
+                        <span class="pill small">เล่นได้ทั้ง Xbox และ PC</span>
+                        <span class="pill outline">Car Pack พิเศษ</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-spaced">
+            <div class="section-heading">
+                <p class="eyebrow">ดูแลหลังการขาย</p>
+                <h2>บริการสำหรับเกมเมอร์</h2>
+                <p class="subhead">ทีมงานตอบไว พร้อมช่วยแก้ปัญหาการรีดีมและแนะนำสเปกเครื่อง</p>
+            </div>
+            <div class="card-grid">
+                <div class="card service-card">
+                    <h3>Live Chat 24/7</h3>
+                    <p>สอบถามวิธีรีดีม ปรับโซนสโตร์ หรือเช็กสถานะคำสั่งซื้อได้ตลอดเวลา</p>
+                </div>
+                <div class="card service-card">
+                    <h3>คู่มือสเปก & ตั้งค่า</h3>
+                    <p>แนะนำการตั้งค่าให้เฟรมเรตสูงสุด พร้อมโปรไฟล์กราฟิกสำหรับเกมยอดนิยม</p>
+                </div>
+                <div class="card service-card">
+                    <h3>รับประกันคีย์แท้</h3>
+                    <p>หากคีย์ใช้งานไม่ได้ ยินดีเปลี่ยนหรือคืนเงินภายใน 24 ชั่วโมง</p>
+                </div>
             </div>
         </section>
 
     </div>
 
     <footer>
-        <p>© 2026 Windows Pond Project | Created for IT Enthusiasts</p>
+        <p>© 2026 POND GAME STORE | Digital codes for every gamer</p>
     </footer>
 
     <a href="https://discord.gg/2vK2GcuQ" target="_blank" class="discord-float">
